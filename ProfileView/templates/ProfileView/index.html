@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Entry</title>
+</head>
+<body>
+    <h2>Create an account</h2>
+    <form action="" method="post">
+        {% csrf_token %}
+        <input type="text" name=""/>
+        <label>Your Name</label>
+        <br>
+        <input type="email" name=""/>
+        <label>Your Email</label>
+        <br>
+        <input type="text" name=""/>
+        <label>Your Mobile</label>
+        <br>
+        <select name="cars" id="cars">
+            {% for a in abc %}
+                <option value="volvo">{{ a }}</option>
+            {% endfor %}
+        </select>
+        <label>Your Age</label>
+        <br>
+        <button type="button" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Register</button>
+    </form>
+</body>
+</html>
