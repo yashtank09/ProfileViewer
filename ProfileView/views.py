@@ -7,4 +7,4 @@ def index(request):
     context = {
         'abc': range(100)
     }
-    return render(request, 'ProfileView/index.html')
+    return render(request, 'ProfileView/index.html', context)
